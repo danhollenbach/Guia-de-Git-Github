@@ -1,6 +1,6 @@
-## Guia-de-Git-Github
+# Guia-de-Git-Github
 Esse repositório tem como finalidade facilitar o uso do git/github e explicar conceitos para o uso dessas ferramentas...Aproveitem!!👍
-### Tópicos Abordados
+## Tópicos Abordados
 - [O que é Git?](#ancora1)
 - [O que é Github?](#ancora2)
 - [Como instalar o Git?](#ancora3)
@@ -13,41 +13,41 @@ Esse repositório tem como finalidade facilitar o uso do git/github e explicar c
 - [Extras](#ancora10)
 - [Referências Bibliográficas](#ancora11)
 <a name="ancora1"></a>
-### O que é Git?
+## O que é Git?
 [Git](https://git-scm.com/downloads), é um sistema usado para rastrear mudanças no código-fonte durante o desenvolvimento de software. Ele permite que vários desenvolvedores trabalhem em um projeto simultaneamente, mantendo o histórico de todas as alterações.
 
 *obs.* Caso ainda não o tenha instalado, basta a acessar o link e fazer o download para o seu sistema operacional.
-##### Principais características:
+### Principais características:
 - Controle de versão: Ele mantém o histórico de alterações no código.
 - Cada cópia de um repositório é completa, ou seja, o histórico é copiado para cada máquina que o clona.
 - Branches: Permite que se trabalhe em diferentes funcionalidades ou correções de forma isolada, sem interferir no código principal.
 <a name="ancora2"></a>
-### O que é Github?
+## O que é Github?
 [GitHub](https://github.com/) é uma plataforma de hospedagem de repositórios Git na nuvem, que facilita a colaboração, o compartilhamento de código e oferece recursos para gerenciamento de projetos, revisão de código e documentação.
-##### Principais características:
+#### Principais características:
 - Repositórios públicos e privados.
 - Integração contínua do código. 
 - Pull requests: Solicitações para incorporar mudanças em um projeto.
 - Issues: Para gerenciamento de tarefas e bugs.
 <a name="ancora3"></a>
-### Como instalar o Git?
-#### Para Windows:
+## Como instalar o Git?
+### Para Windows:
 Baixe a versão mais recente do Git nesse [link](https://git-scm.com/downloads).
 Siga as instruções de instalação, deixando as opções padrão. 
 Isso também instalará o Git Bash, um terminal que emula o Linux no Windows.
-#### Para Linux:
+### Para Linux:
 No terminal, execute:
 ~~~ bash
 sudo apt-get update
 sudo apt-get install git
 ~~~
-#### Para macOS:
+### Para macOS:
 No terminal, execute:
 ~~~ bash
 brew install git
 ~~~ 
 <a name="ancora4"></a>
-### Primeiras configurações no Git Bash
+## Primeiras configurações no Git Bash
 Depois de instalar o Git, é necessário configurar suas informações de usuário. Abra o Git Bash e siga as etapas:
 
 1. Configure seu nome:
@@ -76,7 +76,7 @@ git config --global core.editor "code --wait"  # Exemplo usando VSCode
 Agora, o Git está configurado e pronto para uso.
 
 <a name="ancora5"></a>
-### Principais comandos do Git
+## Principais comandos do Git
 Aqui estão os comandos básicos e mais utilizados no Git:
 
 Crie um repositório Git na pasta atual:
@@ -141,34 +141,34 @@ Baixe e aplique mudanças do repositório remoto para o local:
 git pull origin nome-do-branch
 ~~~
 <a name="ancora6"></a>
-### Como usar o GitHub
+## Como usar o GitHub
 Agora que você sabe como usar o Git localmente, vamos entender como usar o GitHub:
 
-#### Criar um repositório no GitHub:
+### Criar um repositório no GitHub:
 Acesse GitHub.com.
 Faça login (ou crie uma conta).
 Clique em New repository.
 Dê um nome ao seu repositório e escolha se será público ou privado.
 Após criar, você verá as instruções para clonar o repositório.
-#### Conectar seu repositório local ao GitHub:
+### Conectar seu repositório local ao GitHub:
 Assumindo que você já tem um repositório local, conecte-o ao GitHub:
 ~~~bash
 git remote add origin https://github.com/usuario/repo.git
 ~~~
-#### Subir um repositório local para o GitHub:
+### Subir um repositório local para o GitHub:
 Envie suas alterações para o repositório remoto:
 ~~~bash
 git push -u origin master  # Ou main, dependendo da configuração
 ~~~
-#### Colaborando no GitHub:
+### Colaborando no GitHub:
 Para colaborar em um projeto, você pode criar issues (para discutir problemas ou melhorias) ou criar pull requests (para propor mudanças no código).
 <a name="ancora7"></a>
 
-#### Importância do README.md
+### Importância do README.md
 O README.md é um arquivo essencial em qualquer repositório do GitHub. Ele fornece informações sobre o projeto, como o que ele faz, como usá-lo e como contribuir. É a primeira coisa que as pessoas veem ao acessar o repositório, então é importante que seja claro e informativo.
-#### Importância de um bom perfil no GitHub
+### Importância de um bom perfil no GitHub
 O GitHub é uma plataforma de colaboração e compartilhamento de código, e um perfil bem organizado e completo pode ser um diferencial para recrutadores e empresas. Aqui estão algumas dicas para melhorar seu perfil no GitHub:
-#### Github Desktop
+### Github Desktop
 O GitHub Desktop é uma interface gráfica para o Git que facilita o uso do Git e do GitHub. Ele permite clonar repositórios, fazer commits, criar branches e muito mais, tudo de forma visual e intuitiva. É uma ótima opção para quem prefere uma interface gráfica em vez do terminal.
 
 Glossário 📖
@@ -181,13 +181,13 @@ pull request - Mecanismo usado para submeter alterações propostas ao repositó
 gist - Ferramenta que permite o compartilhamento de trechos de código sem a necessidade de criar um repositório completo. Gists podem ser compartilhados publicamente ou de forma privada.
 
 <a name="ancora7"></a>
-### Padrões de Commit
+## Padrões de Commit
 Para um melhor desempenho coletivo se utilizam padrões de commit, afinal você há de entender o que o seu amiguinho fez no código. Isso não é necessário para iniciantes, porém são boas práticas e muito recomendado para o trabalho em equipe. As regras no geral são as seguintes: a mensagem do commit deve conter um emoji (opcional), o tipo do commit (obrigatório), um escopo (opcional) e uma breve mensagem descrevendo as alterações feitas (obrigatório).
 ~~~
 git commit -m " emoji? tipo(escopo?): assunto"   # Modelo
 git commit -m ":sparkles: feat(main.c): win module"  # Exemplo
 ~~~~
-#### Emoji 
+### Emoji 
 O emoji serve apenas para facilitar a vida do dev, onde só de bater o olho o mesmo já teria uma ideia do que se trata o commit.
 
 Tipo de commit	| Emojis
@@ -214,7 +214,7 @@ Refatoração	|♻️ `:recycle:`
 Mover/Renomear	|🚚 `:truck:`
 
 Para mais referências de emojis olhe esse [repositório](https://github.com/iuricode/padroes-de-commits).
-#### Tipo
+### Tipo
 O tipo é responsável por nos dizer qual o tipo de alteração ou iteração está sendo feita, das regras da convenção, temos os seguintes tipos:
 
 > - `test`: indica qualquer tipo de criação ou alteração de códigos de teste. 
@@ -244,15 +244,15 @@ Dessa maneira, conseguimos de forma simples e direta ver qual tipo de mudança e
 
 *obs.* Só um tipo por commit. Caso esteja indeciso sobre qual tipo usar, provavelmente trata-se de uma grande mudança e é possível separar esse commit em dois ou mais commits. A diferença entre `build` e `chore` pode ser um tanto quanto sutil e pode gerar confusão, por isso devemos ficar atentos quanto ao tipo correto. No caso do Node.js por exemplo, podemos pensar que quando há uma adição/alteração de certa dependência de desenvolvimento presente em devDependencies, utilizamos o `chore`. Já para alterações/adições de dependências comuns aos projeto, e que haja impacto direto e real sobre o sistema, utilizamos o `build`.
 
-#### Escopo
+### Escopo
 Esse campo serve para detalhar um pouco mais a área do código que foi mudada. 
 *Ex.* (UserModule), (Auth), (Database), etc.
 
-#### Assunto
+### Assunto
 Resumo em até 4 palavras do que foi feito no commit.
 *Ex.* módulo de pagamento, implementação do hash de senhas, etc.
 
-#### Recomendações 
+### Recomendações 
 - Adicione um tipo consistente com o título do conteúdo.
 - Recomenda-se que na primeira linha deve ter no máximo 4 palavras.
 - Para descrever com detalhes, usar a descrição do commit.
@@ -263,7 +263,7 @@ Por fim, podemos dizer que o Conventional Commit pode adquirir propriedades daqu
 
 
 <a name="ancora8"></a>
-### Curiosidades e Dicas sobre Git/GitHub
+## Curiosidades e Dicas sobre Git/GitHub
 - História do Git: O Git foi criado em 2005 por Linus Torvalds, o criador do Linux, como uma solução para gerenciar o código do kernel do Linux.
 
 - Github Actions: É uma ferramenta de integração contínua que permite automatizar testes e implantar código.
@@ -271,10 +271,10 @@ Por fim, podemos dizer que o Conventional Commit pode adquirir propriedades daqu
 - Forks: No GitHub, você pode "forkar" (copiar) repositórios públicos, permitindo fazer suas próprias modificações sem afetar o projeto original.
 - Commits claros: Sempre escreva mensagens de commit claras e concisas. Isso ajuda a entender o que foi mudado no futuro.
 <a name="ancora9"></a>
-### Conclusão
+## Conclusão
 O Git e o GitHub são ferramentas essenciais para qualquer desenvolvedor de software. Eles permitem que você rastreie e compartilhe código, colabore com outros desenvolvedores e gerencie projetos de forma eficiente. Com este guia, você deve ter uma compreensão básica de como usar o Git e o GitHub, e estar pronto para começar a colaborar em projetos de código aberto ou privados. Lembre-se de praticar e explorar mais recursos para se tornar um mestre no Git e no GitHub. Boa sorte e bons commits!🚀
 <a name="ancora10"></a>
-### Extras
+## Extras
 Como personalizar seu perfil:
 https://www.youtube.com/watch?v=TsaLQAetPLU&t=2s
 https://www.youtube.com/watch?v=cRoBt6AZgjc&ab_channel=Sujeitoprogramador
@@ -284,7 +284,7 @@ https://www.youtube.com/watch?v=k4Rsy8GbKE0
 [pra quem gosta do bash](https://www.youtube.com/shorts/XzFuVIbXF1M)
 <a name="ancora11"></a>
 
-### Referências Bibliográficas
+## Referências Bibliográficas
 padrões de commits: 
 https://medium.com/linkapi-solutions/conventional-commits-pattern-3778d1a1e657
 https://dev.to/renatoadorno/padroes-de-commits-commit-patterns-41co 
