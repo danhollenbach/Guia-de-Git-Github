@@ -1,5 +1,5 @@
-# Guia-de-Git-Github
-Você é um jovem padawan ( ou um futuro cjtinha ) que deseja aprender a usar o Git e o GitHub? Então, você está no lugar certo! Neste guia, vamos abordar os conceitos básicos do Git e do GitHub, como instalar e configurar o Git, os principais comandos do Git, como usar o GitHub e dicas e curiosidades sobre Git e GitHub. Vamos lá! 🚀
+# Guia de Git/Github
+Você é um jovem padawan ( ou um futuro cjtinha ) que deseja aprender a usar o Git e o GitHub? Então, você está no lugar certo! Neste guia, vamos abordar os conceitos básicos do Git e do GitHub, como instalar e configurar o Git, os seus principais comandos, como usar o GitHub e dicas e curiosidades sobre eles. Vamos lá! 🚀
 ## Tópicos Abordados
 - [O que é Git?](#ancora1)
 - [O que é Github?](#ancora2)
@@ -189,7 +189,6 @@ O GitHub é uma plataforma de colaboração e compartilhamento de código, e um 
 
 
 <a name="ancora7"></a>
-
 ## Padrões de Commit 📝
 Para um melhor desempenho coletivo se utilizam padrões de commit, afinal você há de entender o que o seu amiguinho fez no código. Isso não é necessário para iniciantes, porém são boas práticas e muito recomendado para o trabalho em equipe. As regras no geral são as seguintes: a mensagem do commit deve conter um emoji (opcional), o tipo do commit (obrigatório), um escopo (opcional) e uma breve mensagem descrevendo as alterações feitas (obrigatório). O commit também pode apresentar um corpo, descrição mais detalhada das alterações, e um rodapé, com a identificação de quem o fez. Outra convenção é a de que a mensagem do commit deve ser escrita no imperativo, ou seja, como se fosse uma ordem.
 ~~~
