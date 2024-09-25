@@ -1,4 +1,4 @@
-# Guia-de-Git-Github
+# Guia de Git/Github
 Você é um jovem padawan ( ou um futuro cjtinha ) que deseja aprender a usar o Git e o GitHub? Então, você está no lugar certo! Neste guia, vamos abordar os conceitos básicos do Git e do GitHub, como instalar e configurar o Git, os principais comandos do Git, como usar o GitHub e dicas e curiosidades sobre Git e GitHub. Vamos lá! 🚀
 ## Tópicos Abordados
 - [O que é Git?](#ancora1)
