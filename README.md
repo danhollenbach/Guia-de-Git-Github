@@ -313,10 +313,14 @@ Um tema já abordado nesse repositório é a importância do README.md, porém, 
 <a name="ancora11"></a>
 
 ## Referências Bibliográficas 📚
-padrões de commits: 
-https://medium.com/linkapi-solutions/conventional-commits-pattern-3778d1a1e657
-https://dev.to/renatoadorno/padroes-de-commits-commit-patterns-41co 
-Git e Github:
-https://www.youtube.com/watch?v=UBAX-13g8OM&list=PLhkO7OMKgT_rqwGYldqcFxyN4yjFgmDh8 - explica os dois
-https://www.youtube.com/watch?v=s54N3QuLdKc&t=369s&ab_channel=EvertonDev - criar repo
-https://www.youtube.com/shorts/2s-7aleij-Q - criar repo
+Aqui estão algumas referências que podem ser úteis para quem deseja aprender mais sobre Git e GitHub:
+
+-> Padrões de Commits: 
+- [link](https://medium.com/linkapi-solutions/conventional-commits-pattern-3778d1a1e657) sobre material sobre convenção de commit completo. 
+- [link](https://dev.to/renatoadorno/padroes-de-commits-commit-patterns-41co) sobre material sobre convenção de commit resumido.
+
+-> Git e Github:
+- [link](https://www.youtube.com/watch?v=UBAX-13g8OM&list=PLhkO7OMKgT_rqwGYldqcFxyN4yjFgmDh8) de vídeo que explica Git e Github de forma bem didática.
+- [link](https://www.youtube.com/watch?v=s54N3QuLdKc&t=369s&ab_channel=EvertonDev) de vídeo sobre criação de repositório.
+- [link](https://www.youtube.com/shorts/2s-7aleij-Q) de short sobre criação de repositório de forma bem pragmática.
+
