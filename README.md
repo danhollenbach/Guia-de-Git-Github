@@ -1,5 +1,5 @@
 # Guia-de-Git-Github
-Esse repositório tem como finalidade facilitar o uso do git/github e explicar conceitos para o uso dessas ferramentas...Aproveitem!!👍
+Você é um jovem padawan ( ou um futuro cjtinha ) que deseja aprender a usar o Git e o GitHub? Então, você está no lugar certo! Neste guia, vamos abordar os conceitos básicos do Git e do GitHub, como instalar e configurar o Git, os principais comandos do Git, como usar o GitHub e dicas e curiosidades sobre Git e GitHub. Vamos lá! 🚀
 ## Tópicos Abordados
 - [O que é Git?](#ancora1)
 - [O que é Github?](#ancora2)
@@ -13,15 +13,15 @@ Esse repositório tem como finalidade facilitar o uso do git/github e explicar c
 - [Extras](#ancora10)
 - [Referências Bibliográficas](#ancora11)
 <a name="ancora1"></a>
-## O que é Git?
-[Git](https://git-scm.com/downloads), é um sistema usado para rastrear mudanças no código-fonte durante o desenvolvimento de software. Ele permite que vários desenvolvedores trabalhem em um projeto simultaneamente, mantendo o histórico de todas as alterações.
 
-*obs.* Caso ainda não o tenha instalado, basta a acessar o link e fazer o download para o seu sistema operacional.
+## O que é Git?
+[Git](https://git-scm.com) é um sistema usado para rastrear mudanças no código-fonte durante o desenvolvimento de software. Ele permite que vários desenvolvedores trabalhem em um projeto simultaneamente, mantendo o histórico de todas as alterações.
 ### Principais características:
 - Controle de versão: Ele mantém o histórico de alterações no código.
 - Cada cópia de um repositório é completa, ou seja, o histórico é copiado para cada máquina que o clona.
 - Branches: Permite que se trabalhe em diferentes funcionalidades ou correções de forma isolada, sem interferir no código principal.
 <a name="ancora2"></a>
+
 ## O que é Github?
 [GitHub](https://github.com/) é uma plataforma de hospedagem de repositórios Git na nuvem, que facilita a colaboração, o compartilhamento de código e oferece recursos para gerenciamento de projetos, revisão de código e documentação.
 #### Principais características:
@@ -30,10 +30,11 @@ Esse repositório tem como finalidade facilitar o uso do git/github e explicar c
 - Pull requests: Solicitações para incorporar mudanças em um projeto.
 - Issues: Para gerenciamento de tarefas e bugs.
 <a name="ancora3"></a>
+
 ## Como instalar o Git?
 ### Para Windows:
 Baixe a versão mais recente do Git nesse [link](https://git-scm.com/downloads).
-Siga as instruções de instalação, deixando as opções padrão. 
+Siga as instruções de instalação, deixando as opções padrões. 
 Isso também instalará o Git Bash, um terminal que emula o Linux no Windows.
 ### Para Linux:
 No terminal, execute:
@@ -47,6 +48,7 @@ No terminal, execute:
 brew install git
 ~~~ 
 <a name="ancora4"></a>
+
 ## Primeiras configurações no Git Bash
 Depois de instalar o Git, é necessário configurar suas informações de usuário. Abra o Git Bash e siga as etapas:
 
@@ -76,6 +78,7 @@ git config --global core.editor "code --wait"  # Exemplo usando VSCode
 Agora, o Git está configurado e pronto para uso.
 
 <a name="ancora5"></a>
+
 ## Principais comandos do Git
 Aqui estão os comandos básicos e mais utilizados no Git:
 
@@ -141,6 +144,7 @@ Baixe e aplique mudanças do repositório remoto para o local:
 git pull origin nome-do-branch
 ~~~
 <a name="ancora6"></a>
+
 ## Como usar o GitHub
 Agora que você sabe como usar o Git localmente, vamos entender como usar o GitHub:
 
@@ -160,18 +164,8 @@ Envie suas alterações para o repositório remoto:
 ~~~bash
 git push -u origin master  # Ou main, dependendo da configuração
 ~~~
-### Colaborando no GitHub:
-Para colaborar em um projeto, você pode criar issues (para discutir problemas ou melhorias) ou criar pull requests (para propor mudanças no código).
-<a name="ancora7"></a>
 
-### Importância do README.md
-O README.md é um arquivo essencial em qualquer repositório do GitHub. Ele fornece informações sobre o projeto, como o que ele faz, como usá-lo e como contribuir. É a primeira coisa que as pessoas veem ao acessar o repositório, então é importante que seja claro e informativo.
-### Importância de um bom perfil no GitHub
-O GitHub é uma plataforma de colaboração e compartilhamento de código, e um perfil bem organizado e completo pode ser um diferencial para recrutadores e empresas. Aqui estão algumas dicas para melhorar seu perfil no GitHub:
-### Github Desktop
-O GitHub Desktop é uma interface gráfica para o Git que facilita o uso do Git e do GitHub. Ele permite clonar repositórios, fazer commits, criar branches e muito mais, tudo de forma visual e intuitiva. É uma ótima opção para quem prefere uma interface gráfica em vez do terminal.
-
-Glossário 📖
+### Glossário 📖
 fork - Cópia de um repositório para a sua própria conta no GitHub. Isso cria um novo repositório em sua conta que é independente do original, permitindo que você faça alterações sem afetar o repositório original.
 
 issues - Ferramenta usada para gerenciar tarefas, pedidos de novos recursos e correções de bugs em projetos de código aberto. As issues devem ser descritas e listadas, permitindo aos colaboradores discutirem e rastrearem o progresso das mesmas.
@@ -179,6 +173,20 @@ issues - Ferramenta usada para gerenciar tarefas, pedidos de novos recursos e co
 pull request - Mecanismo usado para submeter alterações propostas ao repositório original. Um pull request é uma solicitação para que os mantenedores do projeto revisem e potencialmente incorporem as alterações. O pull request passará por um processo de avaliação e pode ser aceito ou rejeitado.
 
 gist - Ferramenta que permite o compartilhamento de trechos de código sem a necessidade de criar um repositório completo. Gists podem ser compartilhados publicamente ou de forma privada.
+### Github Desktop
+Se você quiser uma forma um pouco mais amigável de lidar com os comandos Git existe o [Github Desktop](https://desktop.github.com/download/), uma interface gráfica que facilita o uso do Git e do GitHub. Ele permite clonar repositórios, fazer commits, criar branches e muito mais, tudo de forma visual e intuitiva. É uma ótima opção para quem preferir uma interface gráfica em vez do terminal.
+### Colaborando no GitHub:
+Para colaborar em um projeto, você pode criar issues (para discutir problemas ou melhorias) ou criar pull requests (para propor mudanças no código). A colaboração é uma das principais vantagens do GitHub, permitindo que desenvolvedores de todo o mundo trabalhem juntos em projetos de código aberto e é de suma importância para devs visto que é uma das formas mais eficazes de aprender, construir portifólio e evoluir na carreira.
+<a name="ancora7"></a>
+
+### Importância do README.md
+O README.md é um arquivo essencial em qualquer repositório do GitHub. Ele fornece informações sobre o projeto, como o que ele faz, como usá-lo e como contribuir. É a primeira coisa que as pessoas veem ao acessar o repositório, então é importante que seja claro e informativo.
+### Importância de um bom perfil no GitHub
+O GitHub é uma plataforma de colaboração e compartilhamento de código, e um perfil bem organizado e completo pode ser um diferencial para recrutadores e empresas. Aqui estão algumas dicas para melhorar seu perfil no GitHub: 
+- Adicione uma foto de perfil e uma descrição bacana.
+- Faça um repositorio com o nome do seu user intrigante.
+- Tenha repositórios públicos com projetos interessantes.
+
 
 <a name="ancora7"></a>
 ## Padrões de Commit
@@ -282,6 +290,12 @@ Como montar readme
 https://www.youtube.com/watch?v=7fEjG4VSXJc
 https://www.youtube.com/watch?v=k4Rsy8GbKE0
 [pra quem gosta do bash](https://www.youtube.com/shorts/XzFuVIbXF1M)
+readme and documentation maker 
+https://www.mkdocs.org/
+https://about.readthedocs.com/?ref=readthedocs.org
+https://readme.com/
+https://github.com/slatedocs/slate
+https://docsify.js.org/#/
 <a name="ancora11"></a>
 
 ## Referências Bibliográficas
