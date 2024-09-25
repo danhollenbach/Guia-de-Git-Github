@@ -1,13 +1,17 @@
-### Guia-de-Git-Github
+## Guia-de-Git-Github
 Esse repositório tem como finalidade facilitar o uso do git/github e explicar conceitos para o uso dessas ferramentas...Aproveitem!!👍
 ### Tópicos Abordados
 - [O que é Git?](#ancora1)
 - [O que é Github?](#ancora2)
 - [Como instalar o Git?](#ancora3)
 - [Primeiras configurações no Git Bash](#ancora4)
-- [Principais comandos do Git](#ancora4)
-- [Como Usar o Git/Github](#ancora4)
-- [Curiosidades](#ancora7)
+- [Principais comandos do Git](#ancora5)
+- [Como Usar o Github](#ancora6)
+- [Padrões de Commit](#ancora7)
+- [Curiosidades e Dicas sobre Git/GitHub](#ancora8)
+- [Conclusão](#ancora9)
+- [Extras](#ancora10)
+- [Referências Bibliográficas](#ancora11)
 <a name="ancora1"></a>
 ### O que é Git?
 [Git](https://git-scm.com/downloads), é um sistema usado para rastrear mudanças no código-fonte durante o desenvolvimento de software. Ele permite que vários desenvolvedores trabalhem em um projeto simultaneamente, mantendo o histórico de todas as alterações.
@@ -17,7 +21,7 @@ Esse repositório tem como finalidade facilitar o uso do git/github e explicar c
 - Controle de versão: Ele mantém o histórico de alterações no código.
 - Cada cópia de um repositório é completa, ou seja, o histórico é copiado para cada máquina que o clona.
 - Branches: Permite que se trabalhe em diferentes funcionalidades ou correções de forma isolada, sem interferir no código principal.
-
+<a name="ancora2"></a>
 ### O que é Github?
 [GitHub](https://github.com/) é uma plataforma de hospedagem de repositórios Git na nuvem, que facilita a colaboração, o compartilhamento de código e oferece recursos para gerenciamento de projetos, revisão de código e documentação.
 ##### Principais características:
@@ -25,7 +29,7 @@ Esse repositório tem como finalidade facilitar o uso do git/github e explicar c
 - Integração contínua do código. 
 - Pull requests: Solicitações para incorporar mudanças em um projeto.
 - Issues: Para gerenciamento de tarefas e bugs.
-
+<a name="ancora3"></a>
 ### Como instalar o Git?
 #### Para Windows:
 Baixe a versão mais recente do Git nesse [link](https://git-scm.com/downloads).
@@ -42,7 +46,7 @@ No terminal, execute:
 ~~~ bash
 brew install git
 ~~~ 
-
+<a name="ancora4"></a>
 ### Primeiras configurações no Git Bash
 Depois de instalar o Git, é necessário configurar suas informações de usuário. Abra o Git Bash e siga as etapas:
 
@@ -71,6 +75,7 @@ git config --global core.editor "code --wait"  # Exemplo usando VSCode
 
 Agora, o Git está configurado e pronto para uso.
 
+<a name="ancora5"></a>
 ### Principais comandos do Git
 Aqui estão os comandos básicos e mais utilizados no Git:
 
@@ -135,6 +140,7 @@ Baixe e aplique mudanças do repositório remoto para o local:
 ~~~bash
 git pull origin nome-do-branch
 ~~~
+<a name="ancora6"></a>
 ### Como usar o GitHub
 Agora que você sabe como usar o Git localmente, vamos entender como usar o GitHub:
 
@@ -165,15 +171,49 @@ O GitHub é uma plataforma de colaboração e compartilhamento de código, e um 
 #### Github Desktop
 O GitHub Desktop é uma interface gráfica para o Git que facilita o uso do Git e do GitHub. Ele permite clonar repositórios, fazer commits, criar branches e muito mais, tudo de forma visual e intuitiva. É uma ótima opção para quem prefere uma interface gráfica em vez do terminal.
 
+Glossário 📖
+fork - Cópia de um repositório para a sua própria conta no GitHub. Isso cria um novo repositório em sua conta que é independente do original, permitindo que você faça alterações sem afetar o repositório original.
+
+issues - Ferramenta usada para gerenciar tarefas, pedidos de novos recursos e correções de bugs em projetos de código aberto. As issues devem ser descritas e listadas, permitindo aos colaboradores discutirem e rastrearem o progresso das mesmas.
+
+pull request - Mecanismo usado para submeter alterações propostas ao repositório original. Um pull request é uma solicitação para que os mantenedores do projeto revisem e potencialmente incorporem as alterações. O pull request passará por um processo de avaliação e pode ser aceito ou rejeitado.
+
+gist - Ferramenta que permite o compartilhamento de trechos de código sem a necessidade de criar um repositório completo. Gists podem ser compartilhados publicamente ou de forma privada.
+
+<a name="ancora7"></a>
 ### Padrões de Commit
 Para um melhor desempenho coletivo se utilizam padrões de commit, afinal você há de entender o que o seu amiguinho fez no código. Isso não é necessário para iniciantes, porém são boas práticas e muito recomendado para o trabalho em equipe. As regras no geral são as seguintes: a mensagem do commit deve conter um emoji (opcional), o tipo do commit (obrigatório), um escopo (opcional) e uma breve mensagem descrevendo as alterações feitas (obrigatório).
 ~~~
 git commit -m " emoji? tipo(escopo?): assunto"   # Modelo
-git commit -m "✨feat(main.c): win module"  # Exemplo
+git commit -m ":sparkles: feat(main.c): win module"  # Exemplo
 ~~~~
 #### Emoji 
 O emoji serve apenas para facilitar a vida do dev, onde só de bater o olho o mesmo já teria uma ideia do que se trata o commit.
-Para referência de emojis olhe esse [repositório](https://github.com/iuricode/padroes-de-commits).
+
+Tipo de commit	| Emojis
+----------------|--------
+Commit inicial	|🎉 `:tada:`
+Tag de versão	|🔖 `:bookmark:`
+Novo recurso	|✨ `:sparkles:`
+Lista de ideias (tasks)|	🔜 `:soon:`
+Bugfix	|🐛 `:bug:`
+Documentação	|📚 `:books:`
+Testes	|🧪 `:test_tube:`
+Adicionando um teste|	✅ `:white_check_mark:`
+Teste de aprovação	|✔️ `:heavy_check_mark:`
+Acessibilidade	|♿ `:wheelchair:`
+Texto	|📝 `:pencil:`
+Package.json em JS	|📦 `:package:`
+Em progresso	|🚧 `:construction:`
+Arquivos de configuração	|🔧 `:wrench:`
+Removendo uma dependência	|➖ `:heavy_minus_sign:`
+Adicionando uma dependência	|➕ `:heavy_plus_sign:`
+Revertendo mudanças|	💥 `:boom:`
+Alterações de revisão de código	|👌 `:ok_hand:`
+Refatoração	|♻️ `:recycle:`
+Mover/Renomear	|🚚 `:truck:`
+
+Para mais referências de emojis olhe esse [repositório](https://github.com/iuricode/padroes-de-commits).
 #### Tipo
 O tipo é responsável por nos dizer qual o tipo de alteração ou iteração está sendo feita, das regras da convenção, temos os seguintes tipos:
 
@@ -222,7 +262,7 @@ Resumo em até 4 palavras do que foi feito no commit.
 Por fim, podemos dizer que o Conventional Commit pode adquirir propriedades daquele projeto, equipe ou empresa, desde que não fuja do conjunto de regras definidos pela convenção, esteja bem alinhados entre os interessados/participantes do projeto e seja bem documentado.
 
 
-
+<a name="ancora8"></a>
 ### Curiosidades e Dicas sobre Git/GitHub
 - História do Git: O Git foi criado em 2005 por Linus Torvalds, o criador do Linux, como uma solução para gerenciar o código do kernel do Linux.
 
@@ -230,4 +270,25 @@ Por fim, podemos dizer que o Conventional Commit pode adquirir propriedades daqu
 - Branches nomeados: É comum usar nomes descritivos para branches, como feature/novo-recurso ou bugfix/corrigir-bug.
 - Forks: No GitHub, você pode "forkar" (copiar) repositórios públicos, permitindo fazer suas próprias modificações sem afetar o projeto original.
 - Commits claros: Sempre escreva mensagens de commit claras e concisas. Isso ajuda a entender o que foi mudado no futuro.
+<a name="ancora9"></a>
+### Conclusão
+O Git e o GitHub são ferramentas essenciais para qualquer desenvolvedor de software. Eles permitem que você rastreie e compartilhe código, colabore com outros desenvolvedores e gerencie projetos de forma eficiente. Com este guia, você deve ter uma compreensão básica de como usar o Git e o GitHub, e estar pronto para começar a colaborar em projetos de código aberto ou privados. Lembre-se de praticar e explorar mais recursos para se tornar um mestre no Git e no GitHub. Boa sorte e bons commits!🚀
+<a name="ancora10"></a>
+### Extras
+Como personalizar seu perfil:
+https://www.youtube.com/watch?v=TsaLQAetPLU&t=2s
+https://www.youtube.com/watch?v=cRoBt6AZgjc&ab_channel=Sujeitoprogramador
+Como montar readme
+https://www.youtube.com/watch?v=7fEjG4VSXJc
+https://www.youtube.com/watch?v=k4Rsy8GbKE0
+[pra quem gosta do bash](https://www.youtube.com/shorts/XzFuVIbXF1M)
+<a name="ancora11"></a>
 
+### Referências Bibliográficas
+padrões de commits: 
+https://medium.com/linkapi-solutions/conventional-commits-pattern-3778d1a1e657
+https://dev.to/renatoadorno/padroes-de-commits-commit-patterns-41co 
+Git e Github:
+https://www.youtube.com/watch?v=UBAX-13g8OM&list=PLhkO7OMKgT_rqwGYldqcFxyN4yjFgmDh8 - explica os dois
+https://www.youtube.com/watch?v=s54N3QuLdKc&t=369s&ab_channel=EvertonDev - criar repo
+https://www.youtube.com/shorts/2s-7aleij-Q - criar repo
