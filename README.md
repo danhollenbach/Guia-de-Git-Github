@@ -12,6 +12,7 @@ Você é um jovem padawan ( ou um futuro cjtinha ) que deseja aprender a usar o 
 - [Conclusão](#ancora9)
 - [Extras](#ancora10)
 - [Referências Bibliográficas](#ancora11)
+- [Como contribuir para esse repositório?](#ancora12)
 <a name="ancora1"></a>
 
 ## O que é Git <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.svg" width="4%">?
@@ -297,6 +298,8 @@ O Git e o GitHub são ferramentas essenciais para qualquer desenvolvedor de soft
 <a name="ancora10"></a>
 
 ## Extras 🎁
+### Extensões do VSCode
+
 ### Commitlint
 Um dos problemas de se trabalhar em equipe é a falta de padronização nos commits, o que pode dificultar a leitura e compreensão do histórico de alterações. Para resolver esse problema, podemos utilizar o [Commitlint](https://commitlint.js.org/#/), uma ferramenta que verifica se os commits seguem um padrão específico. Ele pode ser integrado ao Git e ao GitHub para garantir que todos os commits sigam as mesmas regras, facilitando a colaboração e a revisão de código.
 ### Como montar readme
@@ -306,8 +309,6 @@ Um tema já abordado nesse repositório é a importância do README.md, porém, 
 - [link](https://www.youtube.com/watch?v=k4Rsy8GbKE0) para um vídeo completo sobre o assunto.
 #### Para quem gosta do `>_ bash`
 - [link](https://www.youtube.com/shorts/XzFuVIbXF1M) para um short com uma revisãozinha dos principais comandos git.
-
-
 
 <a name="ancora11"></a>
 
@@ -319,7 +320,14 @@ Aqui estão algumas referências que podem ser úteis para quem deseja aprender 
 - [link](https://dev.to/renatoadorno/padroes-de-commits-commit-patterns-41co) sobre material sobre convenção de commit resumido.
 
 -> Git e Github:
+- [link](https://www.youtube.com/watch?v=8Dd7KRpKeaE&ab_channel=CoderCoder
+) para o melhor vídeo de Git e Github para iniciantes.
 - [link](https://www.youtube.com/watch?v=UBAX-13g8OM&list=PLhkO7OMKgT_rqwGYldqcFxyN4yjFgmDh8) de vídeo que explica Git e Github de forma bem didática.
 - [link](https://www.youtube.com/watch?v=s54N3QuLdKc&t=369s&ab_channel=EvertonDev) de vídeo sobre criação de repositório.
 - [link](https://www.youtube.com/shorts/2s-7aleij-Q) de short sobre criação de repositório de forma bem pragmática.
+
+<a name="ancora12"></a>
+
+## *Quer contribuir para esse guia?* 🤝
+Se você tem alguma sugestão, correção ou adição para esse guia, sinta-se à vontade para abrir uma issue, fazer as alterações necessárias e enviar um pull request. Vamos juntos tornar esse guia ainda mais completo e útil para a comunidade! 🚀
 
