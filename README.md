@@ -299,7 +299,7 @@ O Git e o GitHub são ferramentas essenciais para qualquer desenvolvedor de soft
 
 ## Extras 🎁
 ### Extensões do VSCode
-
+Para usuários de VSCode temos algumas extensões que podem facilitar o uso dessas ferramentas, como o [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens), que adiciona recursos de visualização e navegação ao Git, e o [GitHub Pull Requests](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github), que permite revisar e gerenciar pull requests diretamente no VSCode.
 ### Commitlint
 Um dos problemas de se trabalhar em equipe é a falta de padronização nos commits, o que pode dificultar a leitura e compreensão do histórico de alterações. Para resolver esse problema, podemos utilizar o [Commitlint](https://commitlint.js.org/#/), uma ferramenta que verifica se os commits seguem um padrão específico. Ele pode ser integrado ao Git e ao GitHub para garantir que todos os commits sigam as mesmas regras, facilitando a colaboração e a revisão de código.
 ### Como montar readme
